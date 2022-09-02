@@ -1,5 +1,8 @@
 # AngularWsearchServices
 
+Small Angular app to use services topic.
+Generate service command: ng g service nameService (ng g service wikipedia) - it creates 2 files (.wikipedia.service.ts, wikipedia.service..spec.ts); it adds automatically 'service'to the name.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.8.
 
 ## Development server
