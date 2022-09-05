@@ -15,3 +15,6 @@ onFormSubmit(event: any) {this.submitted.emit(this.term); } //child.comp.ts
  onTerm(term: string) {console.log('term:', term);}
 - Request to : https://www.mediawiki.org/wiki/API:Search (no key needed)
   https://en.wikipedia.org//w/api.php?action=query&format=json&list=search&utf8=1&srsearch=space
+- To make http requests:
+  *import in app.modules.ts HttpClientModule from '@angular/common/http' and add it to imports array
+  *import HttpClient from '@angular/common/http' in the service class that is making the request in order to use it.
