@@ -1,1 +1,14 @@
-<p>Pages result:{{ pages.length }}</p>
+<table>
+  <thead>
+    <th>Title</th>
+    <th>Word Count</th>
+    <th>Snippet</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let page of pages">
+      <td>{{ page.title }}</td>
+      <td>{{ page.wordcounte }}</td>
+      <td>{{ page.snippet }}</td>
+    </tr>
+  </tbody>
+</table>
