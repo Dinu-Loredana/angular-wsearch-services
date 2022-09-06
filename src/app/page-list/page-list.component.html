@@ -7,8 +7,11 @@
   <tbody>
     <tr *ngFor="let page of pages">
       <td>{{ page.title }}</td>
-      <td>{{ page.wordcounte }}</td>
-      <td>{{ page.snippet }}</td>
+      <td>{{ page.wordcounter }}</td>
+      <td [innerHTML]="page.snippet"></td>
+      <!-- Sanitization, mark the html elem <span> as trusted and insert it into DOM-->
+      <!-- <td>{{ page.snippet }}</td> -->
+      <!--Angular escaping - display <span> as plain text, not as html element, to prevent injection of malicious code into browser; XSS attack/ -->
     </tr>
   </tbody>
 </table>
