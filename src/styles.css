@@ -1,1 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+.searchmatch {
+  font-weight: bold;
+}
+/* The element that is using this class is used in page-list.comp.html, but not directly, it's embedded eith (ngFor); because of that can't apply style in page-list-comp.css because the span elem with the class is not directly written in the template file.*/
